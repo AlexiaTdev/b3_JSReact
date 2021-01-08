@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Les meilleurs films netflix",
+        "movies": [
+            {
+                "title" : "Avengers",
+                "type" : "film",
+                "image": "https://wallpaperaccess.com/full/329583.jpg"
+            },
+            {
+                "title" : "Attack on titan",
+                "type" : "film",
+                "image": "https://wallpaperaccess.com/full/329583.jpg"
+            }
+        ]
+
+    },
+    {
+        "name": "Les prochains films qui integrent Netflix en Janvier",
+        "movies": [
+            {
+                "title" : "Amelie Poulain",
+                "type" : "film",
+                "image": "https://wallpaperaccess.com/full/329583.jpg"
+            },
+            {
+                "title" : "Attack on titan",
+                "type" : "film",
+                "image": "https://wallpaperaccess.com/full/329583.jpg"
+            }
+        ]
+
+    }
+]

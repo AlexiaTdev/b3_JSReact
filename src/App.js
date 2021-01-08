@@ -1,28 +1,22 @@
 import react, {useState} from 'react';
 import './App.css';
 import MovieHeader from './components/MovieHeader'
+import CategoryDisplayer from './components/CategoryDisplayer'
+import categories from './categories.json'
 
-const App = ({title}) => {
-  const [color, setColor] = useState("red")
+const App = () => {
+  
   
   const main_movie = {
     title : "Avengers",
-    type : "film"
-  }
-
-  const toggleColor = () => {
-    if (color ==='red'){
-      setColor("blue")
-    } else {
-      setColor("red")
-    }
+    type : "film",
+    image: "https://wallpaperaccess.com/full/329583.jpg"
   }
 
   return (
-    <div className="App">
-      <h1>{title}</h1>
-      <MovieHeader movie={main_movie} color={color}/>
-      <button onClick={toggleColor}>Changer la couleur</button>
+    <div>
+      <MovieHeader movie={main_movie}/>
+      {categories.map(cat => <CategoryDisplayer category={cat} />)}
     </div>
   );
 }
